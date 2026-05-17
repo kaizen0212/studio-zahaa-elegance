@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://studio-zahaa-elegance.lovable.app/sitemap.xml
