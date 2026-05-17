@@ -27,6 +27,34 @@ export const Route = createFileRoute("/")({
           "Soins visage, lifting coréen, laser et plus encore — Asnières-sur-Seine. ⭐ 4.8/5",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://studio-zahaa-elegance.lovable.app" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://studio-zahaa-elegance.lovable.app" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BeautySalon",
+          name: "Studio Zahaa",
+          url: "https://studio-zahaa-elegance.lovable.app",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "99 Quai du Docteur Dervaux",
+            addressLocality: "Asnières-sur-Seine",
+            postalCode: "92600",
+            addressCountry: "FR",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.8",
+            reviewCount: "40",
+          },
+          priceRange: "€€",
+        }),
+      },
     ],
   }),
   component: Index,
