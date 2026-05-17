@@ -6,9 +6,10 @@ export function Hero() {
     <section id="top" className="relative min-h-screen w-full overflow-hidden">
       <img
         src={heroImg}
-        alt="Intérieur de l'institut Studio Zahaa"
+        alt="Intérieur luxueux de l'institut de beauté Studio Zahaa à Asnières-sur-Seine"
         width={1920}
         height={1280}
+        fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-noir/40 via-noir/30 to-noir/70" />
