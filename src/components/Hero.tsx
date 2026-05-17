@@ -20,6 +20,7 @@ export function Hero() {
 
         <h1 className="text-5xl leading-[1.05] sm:text-7xl md:text-8xl">
           Studio <span className="italic text-gradient-gold">Zahaa</span>
+          <span className="sr-only"> – Institut de Beauté à Asnières-sur-Seine</span>
         </h1>
 
         <div className="my-8 h-px w-24 bg-gold" />

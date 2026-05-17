@@ -27,7 +27,11 @@ export function Footer() {
           </div>
         </div>
         <div className="gold-divider mt-12" />
-        <p className="mt-8 text-center text-xs uppercase tracking-widest text-ivory/50">
+        <p className="mt-8 text-center text-xs text-ivory/60 leading-relaxed">
+          Studio Zahaa dessert Asnières-sur-Seine (92600, Hauts-de-Seine) et ses environs :
+          Clichy, Levallois-Perret, Courbevoie, Colombes.
+        </p>
+        <p className="mt-4 text-center text-xs uppercase tracking-widest text-ivory/50">
           © 2025 Studio Zahaa — Tous droits réservés
         </p>
       </div>
