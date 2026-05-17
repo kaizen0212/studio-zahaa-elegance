@@ -72,18 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Studio Zahaa — Institut de beauté à Asnières-sur-Seine" },
-      { name: "description", content: "Studio Zahaa, institut de beauté haut de gamme à Asnières-sur-Seine. Soins visage, lifting coréen, laser, sourcils & cils." },
       { name: "author", content: "Studio Zahaa" },
-      { property: "og:title", content: "Studio Zahaa — Institut de beauté à Asnières-sur-Seine" },
-      { property: "og:description", content: "Institut de beauté haut de gamme à Asnières-sur-Seine. Soins visage, lifting coréen, laser, sourcils & cils." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Studio Zahaa" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Studio Zahaa — Institut de beauté à Asnières-sur-Seine" },
-      { name: "twitter:description", content: "Institut de beauté haut de gamme à Asnières-sur-Seine. Soins visage, lifting coréen, laser, sourcils & cils." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84852a62-3a38-4b4f-9509-db7753aa89a4/id-preview-29ae6e86--bbaad87d-f974-49ca-8740-c6e7561a0302.lovable.app-1778791268385.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84852a62-3a38-4b4f-9509-db7753aa89a4/id-preview-29ae6e86--bbaad87d-f974-49ca-8740-c6e7561a0302.lovable.app-1778791268385.png" },
+      { property: "og:locale", content: "fr_FR" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
@@ -100,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
       </head>

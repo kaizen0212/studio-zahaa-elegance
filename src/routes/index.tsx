@@ -10,28 +10,35 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { useReveal } from "@/hooks/use-reveal";
+import ogImage from "@/assets/og-image.jpg";
+
+const SITE_URL = "https://studio-zahaa-elegance.lovable.app";
+const TITLE = "Studio Zahaa | Institut de Beauté à Asnières-sur-Seine";
+const DESCRIPTION =
+  "Studio Zahaa, institut de beauté à Asnières-sur-Seine (92600). Soins visage, lifting coréen, laser diode, microblading, sourcils et cils. Réservation en ligne 24h/24. ⭐ 4.8/5";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Studio Zahaa — Institut de beauté à Asnières-sur-Seine" },
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
       {
-        name: "description",
+        name: "keywords",
         content:
-          "Studio Zahaa, institut de beauté haut de gamme à Asnières-sur-Seine. Soins du visage, techniques coréennes, laser, sourcils & cils. Réservez en ligne.",
+          "institut beauté Asnières, soin visage, lifting coréen, laser diode, microblading, sourcils, épilation laser, Studio Zahaa",
       },
-      { property: "og:title", content: "Studio Zahaa — Révélez votre beauté naturelle" },
-      {
-        property: "og:description",
-        content:
-          "Soins visage, lifting coréen, laser et plus encore — Asnières-sur-Seine. ⭐ 4.8/5",
-      },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://studio-zahaa-elegance.lovable.app" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:image", content: `${SITE_URL}${ogImage}` },
+      { property: "og:image:width", content: "1216" },
+      { property: "og:image:height", content: "640" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
+      { name: "twitter:image", content: `${SITE_URL}${ogImage}` },
     ],
-    links: [
-      { rel: "canonical", href: "https://studio-zahaa-elegance.lovable.app" },
-    ],
+    links: [{ rel: "canonical", href: SITE_URL }],
     scripts: [
       {
         type: "application/ld+json",
@@ -39,12 +46,14 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "BeautySalon",
           name: "Studio Zahaa",
-          url: "https://studio-zahaa-elegance.lovable.app",
+          url: SITE_URL,
+          image: `${SITE_URL}${ogImage}`,
           address: {
             "@type": "PostalAddress",
             streetAddress: "99 Quai du Docteur Dervaux",
             addressLocality: "Asnières-sur-Seine",
             postalCode: "92600",
+            addressRegion: "Hauts-de-Seine",
             addressCountry: "FR",
           },
           aggregateRating: {
@@ -53,6 +62,17 @@ export const Route = createFileRoute("/")({
             reviewCount: "40",
           },
           priceRange: "€€",
+          amenityFeature: [
+            { "@type": "LocationFeatureSpecification", name: "Parking", value: true },
+            { "@type": "LocationFeatureSpecification", name: "Wi-Fi", value: true },
+          ],
+          areaServed: [
+            "Asnières-sur-Seine",
+            "Clichy",
+            "Levallois-Perret",
+            "Courbevoie",
+            "Colombes",
+          ],
         }),
       },
     ],
