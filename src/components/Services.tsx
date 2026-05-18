@@ -23,11 +23,7 @@ export function Services() {
             Tout voir
           </FilterChip>
           {categories.map((c) => (
-            <FilterChip
-              key={c.id}
-              active={active === c.id}
-              onClick={() => setActive(c.id)}
-            >
+            <FilterChip key={c.id} active={active === c.id} onClick={() => setActive(c.id)}>
               {c.label} {c.emoji}
             </FilterChip>
           ))}

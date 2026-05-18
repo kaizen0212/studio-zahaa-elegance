@@ -20,7 +20,9 @@ export function Reviews() {
             <figure
               key={r.name}
               className={`absolute inset-0 transition-all duration-700 ${
-                idx === i ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+                idx === i
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-4 pointer-events-none"
               }`}
             >
               <div className="text-gold text-xl tracking-[0.35em]">★★★★★</div>

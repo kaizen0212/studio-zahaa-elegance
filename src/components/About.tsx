@@ -25,8 +25,8 @@ export function About() {
           <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
             Studio Zahaa est un écrin dédié à la beauté, fondé et animé par Yesmina Guenniche,
             spécialiste en soins du visage, techniques coréennes, laser et épilation. Chaque
-            prestation est pensée comme une expérience sensorielle, alliant expertise pointue
-            et rituels d'exception.
+            prestation est pensée comme une expérience sensorielle, alliant expertise pointue et
+            rituels d'exception.
           </p>
 
           <dl className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -36,7 +36,9 @@ export function About() {
               <dd className="font-serif text-lg">92600 Asnières-sur-Seine</dd>
             </div>
             <div>
-              <dt className="text-xs uppercase tracking-widest text-muted-foreground">Commodités</dt>
+              <dt className="text-xs uppercase tracking-widest text-muted-foreground">
+                Commodités
+              </dt>
               <dd className="mt-2 font-serif text-lg">Parking disponible</dd>
               <dd className="font-serif text-lg">Wi-Fi offert</dd>
             </div>

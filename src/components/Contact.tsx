@@ -47,12 +47,18 @@ export function Contact() {
               />
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              <Info label="Adresse" lines={["99 Quai du Docteur Dervaux", "92600 Asnières-sur-Seine"]} />
+              <Info
+                label="Adresse"
+                lines={["99 Quai du Docteur Dervaux", "92600 Asnières-sur-Seine"]}
+              />
               <Info label="Commodités" lines={["Parking disponible", "Wi-Fi offert"]} />
             </div>
           </div>
 
-          <form onSubmit={submit} className="reveal space-y-5 border border-border bg-card p-8 md:p-10">
+          <form
+            onSubmit={submit}
+            className="reveal space-y-5 border border-border bg-card p-8 md:p-10"
+          >
             <h3 className="text-2xl">Écrivez-nous</h3>
             <Field label="Nom">
               <input
@@ -99,7 +105,9 @@ function Info({ label, lines }: { label: string; lines: string[] }) {
     <div className="border border-border bg-card p-6">
       <p className="text-xs uppercase tracking-widest text-muted-foreground">{label}</p>
       {lines.map((l) => (
-        <p key={l} className="mt-2 font-serif text-lg">{l}</p>
+        <p key={l} className="mt-2 font-serif text-lg">
+          {l}
+        </p>
       ))}
     </div>
   );

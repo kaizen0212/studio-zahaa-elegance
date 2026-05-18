@@ -80,11 +80,27 @@ export const categories: Category[] = [
 ];
 
 export const reviews = [
-  { name: "Delphine", text: "Une super première expérience avec Nina, très douce, pédagogue, humaine. Un résultat top à renouveler très vite. Allez-y les yeux fermés !" },
-  { name: "Melissa", text: "Très contente du résultat ! Mes sourcils sont bien nets, bien dessinés. Le travail est propre, précis. Je recommande les yeux fermés !" },
-  { name: "Benahmed Nourine", text: "Au top, très professionnel et à l'écoute. J'ai réalisé un soin visage avec lifting coréen. Je recommande à 100% !" },
-  { name: "Mina", text: "Personne très sérieuse, professionnelle, très à l'écoute. Je recommande vivement !" },
-  { name: "Iphone", text: "Choquée du résultat au bout de la 2e séance laser, plus aucun poil sur les jambes et aisselles. Spectaculaire !" },
+  {
+    name: "Delphine",
+    text: "Une super première expérience avec Nina, très douce, pédagogue, humaine. Un résultat top à renouveler très vite. Allez-y les yeux fermés !",
+  },
+  {
+    name: "Melissa",
+    text: "Très contente du résultat ! Mes sourcils sont bien nets, bien dessinés. Le travail est propre, précis. Je recommande les yeux fermés !",
+  },
+  {
+    name: "Benahmed Nourine",
+    text: "Au top, très professionnel et à l'écoute. J'ai réalisé un soin visage avec lifting coréen. Je recommande à 100% !",
+  },
+  {
+    name: "Mina",
+    text: "Personne très sérieuse, professionnelle, très à l'écoute. Je recommande vivement !",
+  },
+  {
+    name: "Iphone",
+    text: "Choquée du résultat au bout de la 2e séance laser, plus aucun poil sur les jambes et aisselles. Spectaculaire !",
+  },
 ];
 
-export const BOOKSY_URL = "https://booksy.com/fr-fr/38075_studio-zahaa_instituts-de-beaute_99187_asnieres-sur-seine";
+export const BOOKSY_URL =
+  "https://booksy.com/fr-fr/38075_studio-zahaa_instituts-de-beaute_99187_asnieres-sur-seine";
