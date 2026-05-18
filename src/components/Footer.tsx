@@ -8,16 +8,26 @@ export function Footer() {
               <span className="font-serif text-3xl">Studio</span>
               <span className="font-serif text-3xl italic text-gradient-gold">Zahaa</span>
             </a>
-            <p className="mt-4 text-sm text-ivory/60">
-              L'écrin de beauté d'Asnières-sur-Seine.
-            </p>
+            <p className="mt-4 text-sm text-ivory/60">L'écrin de beauté d'Asnières-sur-Seine.</p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-gold">Liens rapides</p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><a href="#services" className="text-ivory/80 hover:text-ivory">Prestations</a></li>
-              <li><a href="#booking" className="text-ivory/80 hover:text-ivory">Réserver</a></li>
-              <li><a href="#contact" className="text-ivory/80 hover:text-ivory">Contact</a></li>
+              <li>
+                <a href="#services" className="text-ivory/80 hover:text-ivory">
+                  Prestations
+                </a>
+              </li>
+              <li>
+                <a href="#booking" className="text-ivory/80 hover:text-ivory">
+                  Réserver
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-ivory/80 hover:text-ivory">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -28,8 +38,8 @@ export function Footer() {
         </div>
         <div className="gold-divider mt-12" />
         <p className="mt-8 text-center text-xs text-ivory/60 leading-relaxed">
-          Studio Zahaa dessert Asnières-sur-Seine (92600, Hauts-de-Seine) et ses environs :
-          Clichy, Levallois-Perret, Courbevoie, Colombes.
+          Studio Zahaa dessert Asnières-sur-Seine (92600, Hauts-de-Seine) et ses environs : Clichy,
+          Levallois-Perret, Courbevoie, Colombes.
         </p>
         <p className="mt-4 text-center text-xs uppercase tracking-widest text-ivory/50">
           © 2025 Studio Zahaa — Tous droits réservés
